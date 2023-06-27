@@ -1,6 +1,6 @@
 import React, { createContext, useState } from 'react';
 
-export type ROUTES = 'signin' | 'signup' | 'config';
+export type ROUTES = 'signin' | 'signup' | 'config' | 'home';
 
 interface ContextProps {
   currentRoute: ROUTES;

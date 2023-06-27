@@ -9,6 +9,8 @@ import PagesProvider, { PagesContext } from './pages/PagesProvider';
 import SignInWrapper from 'pages/signin/signin-wrapper';
 import SignUpWrapper from 'pages/signup/signup-wrapper';
 import AuthLayout from 'layouts/auth';
+import HomeWrapper from 'pages/home/home-wrapper';
+import AppLayout from 'layouts/app';
 
 export const routes = {
   signin: (
@@ -33,7 +35,12 @@ export const routes = {
       <SignUpWrapper />
     </AuthLayout>
   ),
-  config: <div>config</div>
+  config: <div>config</div>,
+  home: (
+    <AppLayout>
+      <HomeWrapper />
+    </AppLayout>
+  )
 };
 
 function App(): React.ReactElement {
